@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+version = "2.0.0-beta.0"
+authors = ["Tauri Programme within The Commons Conservancy"]
+homepage = "https://tauri.app/"
+repository = "https://github.com/tauri-apps/tauri-plugin-core"
+license = "Apache-2.0 OR MIT"
+edition = "2021"
+
+[workspace.dependencies]
+util = { path = "crates/util" }
+tauri = { version = "2.0.0-beta.25", default-features = true, features = ["test"] }
+
+[patch.crates-io]
+tauri = { git = "https://github.com/tauri-apps/tauri", branch = "feat/2.x-plugin-builder-result" }
