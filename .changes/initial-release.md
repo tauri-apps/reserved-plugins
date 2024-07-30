@@ -1,6 +1,6 @@
 ---
-"core": patch
-"tauri": patch
+"tauri-plugin-core": patch
+"tauri-plugin-tauri": patch
 ---
 
 Initial release.

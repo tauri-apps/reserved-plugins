@@ -15,11 +15,11 @@
     }
   },
   "packages": {
-    "core": {
+    "tauri-plugin-core": {
       "path": "./crates/tauri-plugin-core",
       "manager": "rust"
     },
-    "tauri": {
+    "tauri-plugin-tauri": {
       "path": "./crates/tauri-plugin-tauri",
       "manager": "rust"
     }
