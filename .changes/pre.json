@@ -1,0 +1,6 @@
+{
+  "tag": "beta",
+  "changes": [
+    ".changes/initial-release.md"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "gitSiteUrl": "https://github.com/tauri-apps/reserved-plugins/",
+  "pkgManagers": {
+    "rust": {
+      "version": true,
+      "getPublishedVersion": {
+        "use": "fetch:check",
+        "options": {
+          "url": "https://crates.io/api/v1/crates/${ pkg.pkg }/${ pkg.pkgFile.version }"
+        }
+      },
+      "publish": [
+        "cargo publish --no-verify --allow-dirty"
+      ]
+    }
+  },
+  "packages": {
+    "core": {
+      "path": "./crates/tauri-plugin-core",
+      "manager": "rust"
+    },
+    "tauri": {
+      "path": "./crates/tauri-plugin-tauri",
+      "manager": "rust"
+    }
+  }
+}
